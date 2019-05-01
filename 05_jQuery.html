@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>jQuery 05 filtering </title>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+        <script>
+            $(function() {
+                $('ul li').slice(1, 3).addClass('highlight');
+            });// end doc ready
+        </script>
+
+
+        <style>
+            p {
+                margin-top: .25em;
+            }
+            .results {
+                color: teal;
+            }
+            .hl2 {
+                color: red;
+                background-color: yellowgreen;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <!-- section>header>h1{hello}+h2{Happy Monday}^article*3>h3+p>lorem -->
+        <section>
+            <header>
+                <h1>jQuery 05 filtering Slice</h1>
+                <h2>We say no to creepy hands</h2>
+
+                <p>no</p>
+            </header>
+            <article>
+                <h2>A list</h2>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+                <h2>A list</h2>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                    <li>Item 5</li>
+                </ul>
+            </article>
+        </section>
+    </body>
+</html>

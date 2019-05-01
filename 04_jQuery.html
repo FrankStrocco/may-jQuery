@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>jQuery 04 filtering </title>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+        <script>
+            $(function() {
+                //$('ul li').has('ul').addClass('outline2');
+                //$('header').has('h2').addClass('hl2');
+
+                //$('header').not('h1').css('color', 'red');
+
+                $('ul li').has(':odd').css('color', 'white');
+
+                $('header').not(':has(h1)').css('color', 'white');
+            });// end doc ready
+        </script>
+
+
+        <style>
+            p {
+                margin-top: .25em;
+            }
+            .results {
+                color: teal;
+            }
+            .hl2 {
+                color: red;
+                background-color: yellowgreen;
+            }
+
+
+        </style>
+
+    </head>
+    <body>
+        <!-- section>header>h1{hello}+h2{Happy Monday}^article*3>h3+p>lorem -->
+        <section>
+            <header>
+                <h1>jQuery 04 filtering</h1>
+                <h2>We say no to creepy hands</h2>
+
+                <p>no</p>
+            </header>
+            <article>
+                <header>
+                    <h2>heeyyyooo</h2>
+                </header>
+                <h2>yo yo</h2>
+                <p>this is a <em>simple</em> paragraph</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item <strong>2</strong></li>
+                        <ul>
+                            <li>interior 1</li>
+                            <li>interior 2</li>
+                            <li>interior 3</li>
+                        </ul>
+                    <li>Item 3</li>
+                </ul>
+
+                <p>Here's another paragraph</p>
+
+
+
+            </article>
+
+            <p>I'm not in  the article</p>
+            <ul>
+                <li>New item 1</li>
+                <li>New item 2</li>
+                <li>New item 3</li>
+                <li>New item 4</li>
+            </ul>
+
+
+        </section>
+    </body>
+</html>

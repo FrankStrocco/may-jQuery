@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>jQuery 15 </title>
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $('article').find('p').addClass('highlight');
+
+                //$('section').children('p').addClass('outline');
+            });// end doc ready
+        </script>
+        <style>
+            p {
+                margin-top: .25em;
+            }
+            .results {
+                color: teal;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!-- section>header>h1{hello}+h2{Happy Monday}^article*3>h3+p>lorem -->
+        <section>
+            <header>
+                <h1>YO YO</h1>
+            </header>
+            <article>
+                <p>This is <em>simple</em> paragraph</p>
+
+                <ul>
+                    <li>Item</li>
+                    <li>Item</li>
+                    <li><p>Item</p></li>
+                </ul>
+
+                <p>Here's another paragraph</p>
+
+
+
+            </article>
+
+            <p>I'm not in  the article</p>
+            <ul>
+                <li>New item 1</li>
+                <li>New item 2</li>
+                <li>New item 3</li>
+                <li>New item 4</li>
+            </ul>
+
+
+        </section>
+    </body>
+</html>
